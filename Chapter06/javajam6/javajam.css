@@ -116,19 +116,19 @@ footer {
 
 #heroroad {
     background-image: url(heroroad.jpg);
-    background-size: 100%;
+    background-size: cover;
     height: 250px;
 }
 
 #heromugs {
     background-image: url(heromugs.jpg);
-    background-size: 100%;
+    background-size: cover;
     height: 250px;
 }
 
 #heroguitar {
     background-image: url(heroguitar.jpg);
-    background-size: 100%;
+    background-size: cover;
     height: 250px;
 }
 
