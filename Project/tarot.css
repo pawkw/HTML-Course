@@ -1,0 +1,206 @@
+body {
+    display: block;
+    background-color: #ff2;
+    color: #008;
+    font-family: "Times New Roman", serif;
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        background-image: url(images/background.jpg);
+    }
+}
+#wrapper {
+    background-image: url(images/wrapper.png);
+    border: 1px solid #44f;
+    border-radius: 2em;
+    min-width: 800px;
+    max-width: 1280px;
+    width: 80%; /* leave room for asides and nav. */
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    /* box-shadow: 4px 8px #222; Do not like */
+}
+
+@media only screen and (max-width: 800px) {
+    #wrapper {
+        background-image: none;
+        background-color: #ccc;
+        min-width: 0;
+        max-width: 800px;
+        width: 100%;
+        margin: 0;
+        box-shadow: 0 0;
+    }
+}
+
+header {
+    text-align: center;
+}
+@media only screen and (min-width: 1024px) {
+    header {
+        margin-top: 2em;
+        height: 150px;
+        background-image: url(images/banner.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    header h1 {
+        display: none;
+    }
+}
+
+h2 {
+    text-align: center;
+}
+
+nav {
+    background-image: url(images/wrapper.png);
+    border: 1px solid #44f;
+    border-radius: 1em;
+    /* box-shadow: 2px 4px #222; Do not like */
+    position: absolute;
+    right: 1%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+@media only screen and (max-width: 1024px) {
+    nav {
+        background-image: none;
+        border: none;
+        border-bottom: 1px solid #44f;
+        border-top: 1px solid #44f;
+        border-radius: 0;
+        box-shadow: none;
+        position: inherit;
+        right: inherit;
+    }
+}
+
+/* The following are for all anchors, not just the nav. */
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #44f;
+}
+
+a:visited {
+    color: #448;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    border: 1px solid red;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+blockquote {
+    font-size: 1.2em;
+    border: 2px solid #44f;
+    padding: 1em;
+}
+
+@media only screen and (max-width: 800px) {
+    blockquote {
+        padding: 0;
+        margin: 1px;
+    }
+}
+
+blockquote:before {
+    color: #44f;
+    content: open-quote;
+    font-size: 4em;
+    float: left;
+    padding-right: 10px;
+}
+
+.waite:after {
+    content: "-A.E. Waite: The Pictorial Key to the Tarot [1911]"
+}
+
+@media only screen and (min-width: 1024px) {
+    blockquote img {
+        float: right;
+        margin-left: 1em;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    blockquote img {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+aside {
+    position: absolute;
+    left: 0.5%;
+    width: 10%; /* This causes the note to intrude on the content. It is intentional. */
+    background: #ff4;
+    box-shadow: 2px 2px #444;
+    font-family: sans-serif;
+    font-size: 0.6em;
+    padding: 0.5em;
+}
+
+aside p {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+@media only screen and (max-width: 1023px) {
+    aside {
+        position: inherit;
+        display: block;
+        width: auto;
+        background: #fcc;
+        color: #f00;
+        box-shadow: none;
+        font-family: inherit;
+        font-style: italic;
+    }
+}
+
+/* horizontal rules change the semantics of the page and also clear all content */
+hr {
+    width: 50%;
+    border-style: hidden;
+    clear: both;
+}
+
+@media only screen and (max-width: 800px) {
+    hr {
+        border-style: solid;
+    }
+}
+
+.comments {
+    margin: 1em;
+}
+
+.paging {
+    display: block;
+    width: 20%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+}
